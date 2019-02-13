@@ -1,0 +1,98 @@
+html { font-family: Arial, Helvetica, sans-serif }
+
+body { margin: 0;}
+
+/*-----------text og font--------*/
+
+h1{ font-size: 48px; margin: 0;}
+
+h2{ font-size: 36px; }
+  
+p{ line-height: 1.5;}
+
+/*-------------layout----------*/
+
+header{
+    background-image: url(../img/banner.jpg);
+    height:220px;
+}
+
+header nav{ 
+    width: 1184px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+main{ 
+    width:1184px;
+    margin: 0 auto;
+    padding: 48px 0;
+}
+
+footer{
+    height: 80px;
+    background-image: url(../img/banner_footer.jpg);
+}
+
+footer div{
+    width:1184px;
+    height:100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*--------navigation----------*/
+
+nav ul{
+    padding:0;
+    list-style: none;
+    align-self: flex-end;
+    display: flex;
+    justify-content: flex-end;  
+}
+
+nav img{
+    margin: 20px 0;
+}
+
+nav a{
+    font-size: 20px;
+    text-decoration: none;           
+}
+
+nav li a{
+    margin-left: 50px;
+    color: rgb(60, 13, 230)
+}
+
+nav li a:hover{
+    color:red;
+    text-decoration: underline;
+}
+                
+/*----------main content----------*/
+
+article{                                           /* (article==1.selector.)*/
+    display: flex;
+    justify-content:space-between; 
+}
+
+article section{ 
+    width:43%;
+}
+
+
+figure img{
+    margin-bottom: 15px;
+}
+
+figure img:nth-last-child(-n+2){ 
+    margin-bottom:  0; 
+}
+
+/*---------------footer content----------*/
+
+footer img{margin-left:  32px;}
+.hidden{display: none}
